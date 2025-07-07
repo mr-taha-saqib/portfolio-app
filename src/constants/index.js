@@ -1,4 +1,3 @@
-
 import {
   logo,
   backend,
@@ -7,6 +6,7 @@ import {
   web,
   github,
   menu,
+  
   close,
   css,
   gearXpert,
@@ -36,7 +36,11 @@ import {
 
 
 // Import Tekisky separately
-import fiverrlogo from "../assets/company/fiverrlogo.png";
+import fiverrlogo from "../assets/company/fiverrlog.png";
+import django from "../assets/tech/dj.png";
+import python from '../assets/tech/py.png';
+import vscode from '../assets/tech/vs.png';
+import jupyter from '../assets/tech/ju.png';
 
 
 export const navLinks = [
@@ -94,19 +98,10 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "gsap",
-    icon: gsap,
-  },
-  {
     name: "framer",
     icon: framer,
   },
 
- 
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
   {
     name: "figma",
     icon: figma,
@@ -118,10 +113,6 @@ const technologies = [
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Material Ui",
-    icon: mui,
   },
   {
     name: "Node JS",
@@ -148,13 +139,29 @@ const technologies = [
     name: "git",
     icon: git,
   },
+  {
+  name: "Django",
+  icon: django,
+},
+{
+  name: "Python",
+  icon: python,
+},
+{
+  name: "VS Code",
+  icon: vscode,
+},
+{
+  name: "Jupyter Notebook",
+  icon: jupyter,
+},
  
 
 ];
 
 const experiences = [
   {
-    title: "AI/ML Developer",
+    title: "AI/ML/CV Developer",
     company_name: "Fiverr",
     icon: fiverrlogo,
     iconBg: "#383E56",
@@ -165,6 +172,35 @@ const experiences = [
   "Implementing efficient model deployment pipelines with attention to performance, scalability, and cross-platform compatibility.",
   "Participating in code and model reviews, offering constructive feedback to ensure code quality and reproducibility of ML experiments.",
 ],
+  },
+
+{
+    title: "Data Mining/Data Scraping Intern",
+    company_name: "FastDev Labs",
+    icon: web,
+    iconBg: "#1A202C",
+    date: "June 2024 - Sept 2024",
+    points: [
+      "Developed custom data scraping scripts using Python, BeautifulSoup, and Selenium to extract structured data from complex websites.",
+"Automated large-scale data collection pipelines with scheduling, retries, and proxy handling for uninterrupted scraping.",
+"Worked with RESTful and GraphQL APIs to fetch, parse, and normalize large datasets from multiple sources.",
+"Cleaned and transformed raw scraped data using Pandas and Regex for integration into dashboards and analytics tools.",
+
+    ],
+  },
+  {
+    title: "Full Stack Website Developer",
+    company_name: "Fiverr",
+    icon: mobile, 
+    iconBg: "#0C1E7F",
+    date: "Oct 2024 - Present",
+    points: [
+     "Developed and deployed full-stack web applications using the MERN stack (MongoDB, Express.js, React, Node.js) with responsive UI and REST API integration.",
+"Built dynamic backend systems with Django and Flask, handling authentication, database operations, and API endpoints for web and mobile use cases.",
+"Created and customized WordPress, Wix websites using themes, and plugins for business clients, ensuring mobile responsiveness and SEO optimization.",
+"Integrated third-party services such as payment gateways, email APIs, and CRMs across various platforms to streamline client workflows and user experience.",
+
+    ],
   },
 ];
 
@@ -198,56 +234,60 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Tekisky Mart",
+    name: "CHARM",
     description:
-      "Tekisky Mart is a web-based platform that allows users to search, explore, and purchase a wide range of products from various providers, offering a seamless and efficient shopping experience.",
+      "The CHARM project leverages AI, computer vision, and deep learning to detect poultry diseases like infectious coryza, fowl cholera, and fowl pox. Built with Django, PostgreSQL, and integrated APIs, it offers a fast, accessible diagnostic system for farmers. This report highlights CHARM’s technology stack, system design, results, and future impact on poultry health management",
     tags: [
       {
-        name: "react",
+        name: "Django",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Computer Vision",
         color: "white-text-gradient",
       },
       {
-        name: "node",
+        name: "AI",
         color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Python",
         color: "green-text-gradient",
       },
  
     ],
     image: project2,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mr-taha-saqib/CHARM-Chicken-Health-Assessment-and-Remote-Monitoring",
   },
   {
-    name: "GearXpert",
+    name: "AI Car Recommendation",
     description:
-      "GearXpert is your ultimate destination for premium auto parts and accessories, Whether you're an automobile enthusiast or a professional, find everything you need to upgrade, repair.",
+      "JDMRevs enhances personalized experiences for JDM car enthusiasts through AI-driven recommendations and real-time visualizations. Using technologies like machine learning, deep learning, and NLP models—such as linear regression, decision trees, random forest, and cosine similarity—it helps users customize and optimize cars to their preferences.",
     tags: [
       {
-        name: "react",
+        name: "NLP",
         color: "blue-text-gradient",
       },
       {
-        name: "emailJs",
+        name: "ML",
         color: "green-text-gradient",
       },
       {
-        name: "Gsap",
+        name: "Deep Learning",
         color: "pink-text-gradient",
+      },
+      {
+        name: "Data Science",
+        color: "white-text-gradient",
       },
     ],
     image: gearXpert,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mr-taha-saqib/AI-Car-Recommendation-Portal",
   },
   {
-    name: "GoGroove-Ecommerce",
+    name: "Elegance Rack",
     description:
-      "Go-Groove is your ultimate destination for premium products across various categories. Whether you're a savvy shopper or a professional, enhance, and simplify your lifestyle—all in one place!",
+      "Elegance Rack is a MERN stack full-stack eCommerce application designed to provide users with a seamless online shopping experience. It features a responsive interface for browsing, filtering, and purchasing clothing items, secure payment gateways, and an admin panel for inventory and order management. The project emphasizes scalability, security, and user-centric design.",
     tags: [
       {
         name: "react",
@@ -267,7 +307,7 @@ const projects = [
       },
     ],
     image: project3,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mr-taha-saqib/Elegance-Rack",
   },
 ];
 
