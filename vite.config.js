@@ -1,6 +1,8 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// Static site: index.html plus one stylesheet. Served from the domain root.
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
-});
+  plugins: [react()],
+  base: process.env.VITE_BASE_PATH || "/portfolio-app"
+})
