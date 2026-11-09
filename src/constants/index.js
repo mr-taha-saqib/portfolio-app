@@ -56,6 +56,33 @@ import coverQuantization from '../assets/projects/cover-quantization.png';
 import coverTransformerTs from '../assets/projects/cover-transformer-ts.png';
 import coverSecConnector from '../assets/projects/cover-sec-connector.png';
 
+import detailSiteline from '../assets/projects/detail-siteline.webp';
+import detailSalesCaller from '../assets/projects/detail-sales-caller.webp';
+import detailContractReview from '../assets/projects/detail-contract-review.webp';
+import detailCharm from '../assets/projects/detail-charm.webp';
+import detailMicroRag from '../assets/projects/detail-micro-rag.webp';
+import detailSentiment from '../assets/projects/detail-sentiment.webp';
+import detailQuantization from '../assets/projects/detail-quantization.webp';
+import detailSec from '../assets/projects/detail-sec.webp';
+import detailCarRec from '../assets/projects/detail-car-rec.webp';
+import shotGerman1 from '../assets/projects/shot-german-1.webp';
+import shotGerman2 from '../assets/projects/shot-german-2.webp';
+import shotSvd1 from '../assets/projects/shot-svd-1.webp';
+import shotSvd2 from '../assets/projects/shot-svd-2.webp';
+import shotSvd3 from '../assets/projects/shot-svd-3.webp';
+import shotSvd4 from '../assets/projects/shot-svd-4.webp';
+import shotResp1 from '../assets/projects/shot-resp-1.webp';
+import shotResp2 from '../assets/projects/shot-resp-2.webp';
+import shotTs1 from '../assets/projects/shot-ts-1.webp';
+import shotTs2 from '../assets/projects/shot-ts-2.webp';
+import shotElegance1 from '../assets/projects/shot-elegance-1.webp';
+import shotElegance2 from '../assets/projects/shot-elegance-2.webp';
+import shotElegance3 from '../assets/projects/shot-elegance-3.webp';
+import shotElegance4 from '../assets/projects/shot-elegance-4.webp';
+import shotElegance5 from '../assets/projects/shot-elegance-5.webp';
+import shotElegance6 from '../assets/projects/shot-elegance-6.webp';
+import shotElegance7 from '../assets/projects/shot-elegance-7.webp';
+
 
 export const navLinks = [
 
@@ -259,7 +286,7 @@ const projects = [
   {
     name: "SiteLine AI Receptionist",
     description:
-      "24/7 inbound voice agent for US construction and inspection businesses. Real-time Twilio ConversationRelay calls with a Claude tool-use loop book into Google Calendar, log leads to Google Sheets, send SMS confirmations and transfer to a human on request.",
+      "24/7 inbound voice agent for US construction and inspection businesses. Real-time Twilio ConversationRelay calls run a Claude tool-use loop that quotes from a pricing table, books into Google Calendar, logs every lead to Google Sheets, texts confirmations, shares Calendly overflow links and transfers to a human on request. AI disclosure and a recording notice are built into every greeting, at roughly one second voice-to-voice.",
     tags: [
       { name: "FastAPI", color: "blue-text-gradient" },
       { name: "Claude API", color: "pink-text-gradient" },
@@ -267,12 +294,13 @@ const projects = [
       { name: "Voice AI", color: "white-text-gradient" },
     ],
     image: coverSiteline,
+    images: [coverSiteline, detailSiteline],
     source_code_link: "https://github.com/mr-taha-saqib/SiteLine-AI-Receptionist",
   },
   {
     name: "Autonomous AI Sales Caller & CRM",
     description:
-      "AI cold-calling platform with a built-in CRM. Twilio Voice calls powered by the Claude API qualify leads, handle objections and book appointments. FastAPI, PostgreSQL and a Next.js dashboard, deployed with Docker Compose and Nginx.",
+      "AI cold-calling platform with a built-in CRM. Twilio Voice calls powered by the Claude API qualify leads, handle objections, book appointments and write every outcome back to PostgreSQL. FastAPI backend with SQLAlchemy and Alembic, JWT authentication with role-based access, a Next.js and TypeScript dashboard, Docker Compose and Nginx deployment, and pytest and Playwright tests.",
     tags: [
       { name: "FastAPI", color: "blue-text-gradient" },
       { name: "Next.js", color: "white-text-gradient" },
@@ -280,12 +308,13 @@ const projects = [
       { name: "Claude API", color: "pink-text-gradient" },
     ],
     image: coverSalesCaller,
+    images: [coverSalesCaller, detailSalesCaller],
     source_code_link: "https://github.com/mr-taha-saqib/Autonomous-AI-Sales-Caller-CRM",
   },
   {
     name: "AI Contract Review Assistant",
     description:
-      "Analyses PDF, DOCX and TXT contracts, flags liability, termination, confidentiality and payment clauses with Low, Medium or High risk, and answers questions in plain language with persistent chat history. Next.js, Prisma and OpenAI GPT-4o.",
+      "Upload a PDF, DOCX or TXT contract (up to 10 MB) and get liability, termination, confidentiality and payment clauses flagged with Low, Medium or High risk and explained in plain language. Context-aware Q&A keeps chat history per contract, sensitive questions get extra disclaimers, and results export as a PDF report. Next.js, TypeScript, Prisma and OpenAI GPT-4o.",
     tags: [
       { name: "Next.js", color: "white-text-gradient" },
       { name: "TypeScript", color: "blue-text-gradient" },
@@ -293,12 +322,13 @@ const projects = [
       { name: "Prisma", color: "pink-text-gradient" },
     ],
     image: coverContractReview,
+    images: [coverContractReview, detailContractReview],
     source_code_link: "https://github.com/mr-taha-saqib/ai-powered-legal-contract-review-risk-analysis-assistant",
   },
   {
     name: "CHARM",
     description:
-      "Computer-vision platform that detects and diagnoses poultry disease from images and video. YOLOv8 detection, BoT-SORT tracking and ResNet50 classification identify infectious coryza, fowl cholera and fowl pox, served through a Django web app. University project, team of three.",
+      "Computer-vision platform that detects and diagnoses poultry disease from images and video. YOLOv8 detects chickens, BoT-SORT tracks individual birds and ResNet50 classifies infectious coryza, fowl cholera and fowl pox. The Django web app adds secure login, diagnostic history, health alerts with treatment suggestions and an admin dashboard. University project, team of three.",
     tags: [
       {
         name: "Django",
@@ -319,12 +349,13 @@ const projects = [
 
     ],
     image: project2,
+    images: [project2, detailCharm],
     source_code_link: "https://github.com/mr-taha-saqib/CHARM-Chicken-Health-Assessment-and-Remote-Monitoring",
   },
   {
     name: "Micro-RAG over a Knowledge Graph",
     description:
-      "Retrieval-augmented QA built from scratch: a TF-IDF retriever over RDF triples feeds a compact encoder-decoder Transformer in PyTorch (256-dim, 3+3 layers, 8 heads, no pretrained weights), trained on four tasks.",
+      "Retrieval-augmented QA built from scratch: a TF-IDF retriever over RDF triples feeds a compact encoder-decoder Transformer in PyTorch (256-dim, 3+3 layers, 8 heads, no pretrained weights). Four tasks (text to triples, triples to text, grounded QA and a triple consistency check) share one trunk and train in a single backward pass. No LangChain and no hosted LLM.",
     tags: [
       { name: "PyTorch", color: "pink-text-gradient" },
       { name: "RAG", color: "blue-text-gradient" },
@@ -332,12 +363,13 @@ const projects = [
       { name: "NLP", color: "white-text-gradient" },
     ],
     image: coverMicroRag,
+    images: [coverMicroRag, detailMicroRag],
     source_code_link: "https://github.com/mr-taha-saqib/Micro-RAG-over-an-RDF-Knowledge-Graph",
   },
   {
     name: "German SME Transaction Classification",
     description:
-      "Leakage-safe reproduction of a published SME transaction-categorisation pipeline for German text and 37 classes. GermanFinBERT reached 0.649 ± 0.027 accuracy against 0.612 ± 0.025 for FinBERT over five seeds, with calibrated routing to manual review.",
+      "Leakage-safe reproduction of a published SME transaction-categorisation pipeline for German text and 37 classes. GermanFinBERT reached 0.649 ± 0.027 accuracy against 0.612 ± 0.025 for FinBERT over five seeds, with calibrated routing to manual review. Reliability diagrams compare model confidence before and after calibration.",
     tags: [
       { name: "Hugging Face", color: "green-text-gradient" },
       { name: "FinBERT", color: "blue-text-gradient" },
@@ -345,12 +377,13 @@ const projects = [
       { name: "NLP", color: "white-text-gradient" },
     ],
     image: coverGermanSme,
+    images: [coverGermanSme, shotGerman1, shotGerman2],
     source_code_link: "https://github.com/mr-taha-saqib/german-sme-bank-transaction-classification",
   },
   {
     name: "SVD Collaborative Filtering",
     description:
-      "Recommender system on MovieLens 100K and 1M. Truncated SVD at k=10 reaches an RMSE of 0.8812 against 1.0447 for a global-mean baseline; SGD matrix factorisation reaches 0.8710.",
+      "Recommender system on MovieLens 100K and 1M. Truncated SVD at k=10 reaches an RMSE of 0.8812 against 1.0447 for a global-mean baseline; SGD matrix factorisation reaches 0.8710. Plots cover singular-value decay, explained variance, RMSE and MAE against rank, baseline comparison and a cross-dataset check.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
       { name: "NumPy", color: "blue-text-gradient" },
@@ -358,12 +391,13 @@ const projects = [
       { name: "ML", color: "white-text-gradient" },
     ],
     image: coverSvdCf,
+    images: [coverSvdCf, shotSvd1, shotSvd2, shotSvd3, shotSvd4],
     source_code_link: "https://github.com/mr-taha-saqib/SVD-Based-Collaborative-Filtering",
   },
   {
     name: "Respiratory Waveform Forecasting",
     description:
-      "BiLSTM with Bahdanau attention that forecasts 15 seconds of the nasal-pressure waveform from 20 seconds of physiological signal in EDF files, with 32 Hz resampling, sliding-window inference and GPU or CPU execution.",
+      "BiLSTM with Bahdanau attention that forecasts 15 seconds of the nasal-pressure waveform from 20 seconds of physiological signal in EDF files. The pipeline filters, normalises and resamples to 32 Hz, extracts breathing frequency, runs sliding-window inference on GPU or CPU and exports predictions to CSV and EDF.",
     tags: [
       { name: "PyTorch", color: "pink-text-gradient" },
       { name: "BiLSTM", color: "blue-text-gradient" },
@@ -371,12 +405,13 @@ const projects = [
       { name: "Deep Learning", color: "white-text-gradient" },
     ],
     image: coverRespiratory,
+    images: [coverRespiratory, shotResp1, shotResp2],
     source_code_link: "https://github.com/mr-taha-saqib/Respiratory-Waveform-Prediction-using-BiLSTM-with-Attention",
   },
   {
     name: "SentimentFusion",
     description:
-      "Sentiment dashboard with four models trained on 200,000+ Twitter and Reddit posts. The best model, an SVM, reaches 80.52% accuracy. Adds sarcasm flagging and bulk analysis of Bluesky posts.",
+      "Flask sentiment dashboard with four models (Logistic Regression, SVM, Naive Bayes and Random Forest) trained on 200,000+ Twitter and Reddit posts. The best model, an SVM, reaches 80.52% accuracy. Shows confidence scores, flags likely sarcasm with a context-aware detector and analyses batches of Bluesky posts.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
       { name: "scikit-learn", color: "blue-text-gradient" },
@@ -384,12 +419,13 @@ const projects = [
       { name: "ML", color: "pink-text-gradient" },
     ],
     image: coverSentiment,
+    images: [coverSentiment, detailSentiment],
     source_code_link: "https://github.com/mr-taha-saqib/SentimentFusion",
   },
   {
     name: "Vision Model Quantization Benchmark",
     description:
-      "Benchmarks FP16 against INT8 inference for a vision model, measuring latency, throughput and peak GPU memory. INT8 lowered memory use and improved latency and throughput.",
+      "Benchmarks FP16 against INT8 inference for a vision model, measuring latency, throughput and peak GPU memory across multiple runs. INT8 lowered memory use and improved latency and throughput, while FP16 kept higher numerical precision.",
     tags: [
       { name: "PyTorch", color: "pink-text-gradient" },
       { name: "CUDA", color: "green-text-gradient" },
@@ -397,12 +433,13 @@ const projects = [
       { name: "Computer Vision", color: "white-text-gradient" },
     ],
     image: coverQuantization,
+    images: [coverQuantization, detailQuantization],
     source_code_link: "https://github.com/mr-taha-saqib/Vision-Model-Quantization-Inference-Benchmarking-FP16-vs-INT8-",
   },
   {
     name: "Transformer Time-Series Forecasting",
     description:
-      "Compares autoregressive and non-autoregressive Transformer forecasters with distributional modelling, evaluated with NRMSE and CRPS.",
+      "Compares autoregressive and non-autoregressive Transformer forecasters with distributional modelling, evaluated with NRMSE and CRPS. The notebook covers preprocessing and windowing, training with hyperparameter tuning, and forecast plots against actual values.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
       { name: "Transformers", color: "blue-text-gradient" },
@@ -410,12 +447,13 @@ const projects = [
       { name: "Deep Learning", color: "white-text-gradient" },
     ],
     image: coverTransformerTs,
+    images: [coverTransformerTs, shotTs1, shotTs2],
     source_code_link: "https://github.com/mr-taha-saqib/Transformer-TimeSeries-Forecasting",
   },
   {
     name: "SEC Filing Connector",
     description:
-      "Typed Python library and CLI for SEC EDGAR filings: ticker-to-CIK lookup, filtering by form type and date, and filing download. Pydantic v2 models, httpx client and 35 passing tests.",
+      "Typed Python library and CLI for SEC EDGAR filings: ticker-to-CIK lookup, filtering by form type and date range, and filing download. The CLI prints a table or JSON and can save the first matching filing to a file. Pydantic v2 models, an httpx client and 35 passing tests.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
       { name: "Pydantic", color: "blue-text-gradient" },
@@ -423,12 +461,13 @@ const projects = [
       { name: "pytest", color: "pink-text-gradient" },
     ],
     image: coverSecConnector,
+    images: [coverSecConnector, detailSec],
     source_code_link: "https://github.com/mr-taha-saqib/SEC-Filing-Connector",
   },
   {
     name: "Elegance Rack",
     description:
-      "MERN-stack e-commerce app built with one teammate: search, filtering and sorting, cart and checkout with payment integration, role-based authentication and an admin panel for inventory and orders.",
+      "MERN-stack clothing store built with one teammate: product search, filtering and sorting, product pages, cart and checkout with payment integration, order history with status tracking, role-based authentication and an admin panel to add products and manage orders. Responsive React and Tailwind CSS interface.",
     tags: [
       {
         name: "react",
@@ -447,13 +486,14 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: project3,
+    image: shotElegance1,
+    images: [shotElegance1, shotElegance2, shotElegance3, shotElegance4, shotElegance5, shotElegance6, shotElegance7],
     source_code_link: "https://github.com/mr-taha-saqib/Elegance-Rack",
   },
   {
     name: "JDMRevs: AI Car Recommendation",
     description:
-      "Car recommendation project on the CarDekho vehicle dataset using linear regression, decision trees, random forests and cosine similarity.",
+      "JDMRevs recommends cars from user preferences such as brand, fuel type, transmission, vehicle age and budget. Built with one teammate on the CarDekho vehicle dataset, it compares regression models, ANN and RNN deep-learning models and cosine similarity; the ANN achieved the highest accuracy.",
     tags: [
       {
         name: "ML",
@@ -473,6 +513,7 @@ const projects = [
       },
     ],
     image: gearXpert,
+    images: [gearXpert, detailCarRec],
     source_code_link: "https://github.com/mr-taha-saqib/AI-Car-Recommendation-Portal",
   },
 ];

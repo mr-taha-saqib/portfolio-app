@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Tilt } from "react-tilt";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -17,9 +17,29 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  images,
   source_code_link,
 }) => {
   const cardRef = useRef(null);
+  const gallery = images && images.length ? images : [image];
+  const [current, setCurrent] = useState(0);
+
+  // Cycle through the project's images inside the same image frame.
+  useEffect(() => {
+    if (gallery.length < 2) return undefined;
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return undefined;
+    }
+    const timer = setInterval(
+      () => setCurrent((c) => (c + 1) % gallery.length),
+      3800 + (index % 4) * 350
+    );
+    return () => clearInterval(timer);
+  }, [gallery.length, index]);
 
   useEffect(() => {
     const el = cardRef.current;
@@ -56,11 +76,17 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover object-left rounded-2xl"
-          />
+          {gallery.map((src, i) => (
+            <img
+              key={`${name}-img-${i}`}
+              src={src}
+              alt={`${name} preview ${i + 1}`}
+              loading={i === 0 ? "eager" : "lazy"}
+              className={`absolute inset-0 w-full h-full object-cover object-left rounded-2xl transition-opacity duration-700 ${
+                i === current ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
@@ -74,6 +100,22 @@ const ProjectCard = ({
               />
             </div>
           </div>
+
+          {gallery.length > 1 && (
+            <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">
+              {gallery.map((_, i) => (
+                <button
+                  key={`${name}-dot-${i}`}
+                  type="button"
+                  aria-label={`Show image ${i + 1} of ${gallery.length} for ${name}`}
+                  onClick={() => setCurrent(i)}
+                  className={`h-1.5 rounded-full transition-all ${
+                    i === current ? "w-4 bg-white" : "w-1.5 bg-white/40"
+                  }`}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="mt-5">

@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#050816" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taha Saqib | Generative AI Engineer &amp; Full-Stack Developer</title>
     <meta
@@ -39,6 +45,7 @@
         "alternateName": "Muhammad Taha Saqib",
         "url": "https://portfolio-app-two-lilac.vercel.app/",
         "jobTitle": "Generative AI Engineer",
+        "image": "https://portfolio-app-two-lilac.vercel.app/icon-512.png",
         "description": "Generative AI Engineer and full-stack developer building production LLM agents, RAG pipelines, voice AI and computer-vision systems.",
         "worksFor": {
           "@type": "Organization",
@@ -112,20 +119,20 @@
 
         <h2>Projects</h2>
         <ul>
-          <li><a href="https://github.com/mr-taha-saqib/SiteLine-AI-Receptionist">SiteLine AI Receptionist</a>: inbound voice agent for construction and inspection businesses (Twilio ConversationRelay, Claude API, FastAPI, Google Calendar and Sheets).</li>
-          <li><a href="https://github.com/mr-taha-saqib/Autonomous-AI-Sales-Caller-CRM">Autonomous AI Sales Caller &amp; CRM</a>: AI cold-calling platform (Twilio Voice, Claude API, FastAPI, PostgreSQL, Next.js, Docker).</li>
-          <li><a href="https://github.com/mr-taha-saqib/ai-powered-legal-contract-review-risk-analysis-assistant">AI Contract Review Assistant</a>: contract clause and risk analysis with Q&amp;A (Next.js, TypeScript, Prisma, OpenAI GPT-4o).</li>
-          <li><a href="https://github.com/mr-taha-saqib/CHARM-Chicken-Health-Assessment-and-Remote-Monitoring">CHARM</a>: poultry disease detection (YOLOv8, BoT-SORT, ResNet50, Django).</li>
-          <li><a href="https://github.com/mr-taha-saqib/Micro-RAG-over-an-RDF-Knowledge-Graph">Micro-RAG over a Knowledge Graph</a>: from-scratch retrieval-augmented QA Transformer (PyTorch).</li>
-          <li><a href="https://github.com/mr-taha-saqib/german-sme-bank-transaction-classification">German SME Transaction Classification</a>: GermanFinBERT 0.649 &plusmn; 0.027 accuracy vs FinBERT 0.612 &plusmn; 0.025 over five seeds.</li>
-          <li><a href="https://github.com/mr-taha-saqib/SVD-Based-Collaborative-Filtering">SVD Collaborative Filtering</a>: MovieLens recommender, RMSE 0.8812 at k=10.</li>
-          <li><a href="https://github.com/mr-taha-saqib/Respiratory-Waveform-Prediction-using-BiLSTM-with-Attention">Respiratory Waveform Forecasting</a>: BiLSTM with attention (PyTorch).</li>
-          <li><a href="https://github.com/mr-taha-saqib/SentimentFusion">SentimentFusion</a>: multi-model sentiment dashboard, SVM 80.52% accuracy.</li>
-          <li><a href="https://github.com/mr-taha-saqib/Vision-Model-Quantization-Inference-Benchmarking-FP16-vs-INT8-">Vision Model Quantization Benchmark</a>: FP16 vs INT8 inference.</li>
-          <li><a href="https://github.com/mr-taha-saqib/Transformer-TimeSeries-Forecasting">Transformer Time-Series Forecasting</a>: autoregressive vs non-autoregressive Transformers.</li>
-          <li><a href="https://github.com/mr-taha-saqib/SEC-Filing-Connector">SEC Filing Connector</a>: typed Python library and CLI for SEC EDGAR (35 tests).</li>
-          <li><a href="https://github.com/mr-taha-saqib/Elegance-Rack">Elegance Rack</a>: MERN e-commerce application.</li>
-          <li><a href="https://github.com/mr-taha-saqib/AI-Car-Recommendation-Portal">JDMRevs: AI Car Recommendation</a>: car recommendation with scikit-learn models.</li>
+          <li><a href="https://github.com/mr-taha-saqib/SiteLine-AI-Receptionist">SiteLine AI Receptionist</a>: 24/7 inbound voice agent for US construction and inspection businesses. Real-time Twilio ConversationRelay calls run a Claude tool-use loop that quotes from a pricing table, books into Google Calendar, logs every lead to Google Sheets, texts confirmations, shares Calendly overflow links and transfers to a human on request. AI disclosure and a recording notice are built into every greeting, at roughly one second voice-to-voice.</li>
+          <li><a href="https://github.com/mr-taha-saqib/Autonomous-AI-Sales-Caller-CRM">Autonomous AI Sales Caller &amp; CRM</a>: AI cold-calling platform with a built-in CRM. Twilio Voice calls powered by the Claude API qualify leads, handle objections, book appointments and write every outcome back to PostgreSQL. FastAPI backend with SQLAlchemy and Alembic, JWT authentication with role-based access, a Next.js and TypeScript dashboard, Docker Compose and Nginx deployment, and pytest and Playwright tests.</li>
+          <li><a href="https://github.com/mr-taha-saqib/ai-powered-legal-contract-review-risk-analysis-assistant">AI Contract Review Assistant</a>: Upload a PDF, DOCX or TXT contract (up to 10 MB) and get liability, termination, confidentiality and payment clauses flagged with Low, Medium or High risk and explained in plain language. Context-aware Q&amp;A keeps chat history per contract, sensitive questions get extra disclaimers, and results export as a PDF report. Next.js, TypeScript, Prisma and OpenAI GPT-4o.</li>
+          <li><a href="https://github.com/mr-taha-saqib/CHARM-Chicken-Health-Assessment-and-Remote-Monitoring">CHARM</a>: Computer-vision platform that detects and diagnoses poultry disease from images and video. YOLOv8 detects chickens, BoT-SORT tracks individual birds and ResNet50 classifies infectious coryza, fowl cholera and fowl pox. The Django web app adds secure login, diagnostic history, health alerts with treatment suggestions and an admin dashboard. University project, team of three.</li>
+          <li><a href="https://github.com/mr-taha-saqib/Micro-RAG-over-an-RDF-Knowledge-Graph">Micro-RAG over a Knowledge Graph</a>: Retrieval-augmented QA built from scratch: a TF-IDF retriever over RDF triples feeds a compact encoder-decoder Transformer in PyTorch (256-dim, 3+3 layers, 8 heads, no pretrained weights). Four tasks (text to triples, triples to text, grounded QA and a triple consistency check) share one trunk and train in a single backward pass. No LangChain and no hosted LLM.</li>
+          <li><a href="https://github.com/mr-taha-saqib/german-sme-bank-transaction-classification">German SME Transaction Classification</a>: Leakage-safe reproduction of a published SME transaction-categorisation pipeline for German text and 37 classes. GermanFinBERT reached 0.649 ± 0.027 accuracy against 0.612 ± 0.025 for FinBERT over five seeds, with calibrated routing to manual review. Reliability diagrams compare model confidence before and after calibration.</li>
+          <li><a href="https://github.com/mr-taha-saqib/SVD-Based-Collaborative-Filtering">SVD Collaborative Filtering</a>: Recommender system on MovieLens 100K and 1M. Truncated SVD at k=10 reaches an RMSE of 0.8812 against 1.0447 for a global-mean baseline; SGD matrix factorisation reaches 0.8710. Plots cover singular-value decay, explained variance, RMSE and MAE against rank, baseline comparison and a cross-dataset check.</li>
+          <li><a href="https://github.com/mr-taha-saqib/Respiratory-Waveform-Prediction-using-BiLSTM-with-Attention">Respiratory Waveform Forecasting</a>: BiLSTM with Bahdanau attention that forecasts 15 seconds of the nasal-pressure waveform from 20 seconds of physiological signal in EDF files. The pipeline filters, normalises and resamples to 32 Hz, extracts breathing frequency, runs sliding-window inference on GPU or CPU and exports predictions to CSV and EDF.</li>
+          <li><a href="https://github.com/mr-taha-saqib/SentimentFusion">SentimentFusion</a>: Flask sentiment dashboard with four models (Logistic Regression, SVM, Naive Bayes and Random Forest) trained on 200,000+ Twitter and Reddit posts. The best model, an SVM, reaches 80.52% accuracy. Shows confidence scores, flags likely sarcasm with a context-aware detector and analyses batches of Bluesky posts.</li>
+          <li><a href="https://github.com/mr-taha-saqib/Vision-Model-Quantization-Inference-Benchmarking-FP16-vs-INT8-">Vision Model Quantization Benchmark</a>: Benchmarks FP16 against INT8 inference for a vision model, measuring latency, throughput and peak GPU memory across multiple runs. INT8 lowered memory use and improved latency and throughput, while FP16 kept higher numerical precision.</li>
+          <li><a href="https://github.com/mr-taha-saqib/Transformer-TimeSeries-Forecasting">Transformer Time-Series Forecasting</a>: Compares autoregressive and non-autoregressive Transformer forecasters with distributional modelling, evaluated with NRMSE and CRPS. The notebook covers preprocessing and windowing, training with hyperparameter tuning, and forecast plots against actual values.</li>
+          <li><a href="https://github.com/mr-taha-saqib/SEC-Filing-Connector">SEC Filing Connector</a>: Typed Python library and CLI for SEC EDGAR filings: ticker-to-CIK lookup, filtering by form type and date range, and filing download. The CLI prints a table or JSON and can save the first matching filing to a file. Pydantic v2 models, an httpx client and 35 passing tests.</li>
+          <li><a href="https://github.com/mr-taha-saqib/Elegance-Rack">Elegance Rack</a>: MERN-stack clothing store built with one teammate: product search, filtering and sorting, product pages, cart and checkout with payment integration, order history with status tracking, role-based authentication and an admin panel to add products and manage orders. Responsive React and Tailwind CSS interface.</li>
+          <li><a href="https://github.com/mr-taha-saqib/AI-Car-Recommendation-Portal">JDMRevs: AI Car Recommendation</a>: JDMRevs recommends cars from user preferences such as brand, fuel type, transmission, vehicle age and budget. Built with one teammate on the CarDekho vehicle dataset, it compares regression models, ANN and RNN deep-learning models and cosine similarity; the ANN achieved the highest accuracy.</li>
         </ul>
 
         <h2>Skills</h2>
