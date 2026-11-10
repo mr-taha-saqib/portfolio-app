@@ -65,9 +65,18 @@ const Navbar = () => {
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            alt={toggle ? 'Close menu' : 'Open menu'}
+            role='button'
+            tabIndex={0}
+            aria-expanded={toggle}
+            className='w-[28px] h-[28px] object-contain cursor-pointer'
             onClick={() => setToggle(!toggle)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                setToggle(!toggle);
+              }
+            }}
           />
 
           <div

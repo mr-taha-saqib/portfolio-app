@@ -82,6 +82,9 @@ const ProjectCard = ({
               src={src}
               alt={`${name} preview ${i + 1}`}
               loading={i === 0 ? "eager" : "lazy"}
+              decoding="async"
+              width={800}
+              height={575}
               className={`absolute inset-0 w-full h-full object-cover object-left rounded-2xl transition-opacity duration-700 ${
                 i === current ? "opacity-100" : "opacity-0"
               }`}
