@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="w-full py-4 bg-black-100/55 text-white flex justify-center gap-6">
       <a
-        href="https://www.linkedin.com/in/taha-saqib-67620044a/"
+        href="https://www.linkedin.com/in/taha-saqib-ai"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Taha Saqib on LinkedIn"
