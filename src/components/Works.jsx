@@ -73,9 +73,9 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl w-full max-w-[360px]"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full aspect-[800/575]">
           {gallery.map((src, i) => (
             <img
               key={`${name}-img-${i}`}
@@ -105,17 +105,22 @@ const ProjectCard = ({
           </div>
 
           {gallery.length > 1 && (
-            <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">
+            <div className="absolute bottom-0 left-0 right-0 flex justify-center">
               {gallery.map((_, i) => (
                 <button
                   key={`${name}-dot-${i}`}
                   type="button"
                   aria-label={`Show image ${i + 1} of ${gallery.length} for ${name}`}
+                  aria-current={i === current ? "true" : undefined}
                   onClick={() => setCurrent(i)}
-                  className={`h-1.5 rounded-full transition-all ${
-                    i === current ? "w-4 bg-white" : "w-1.5 bg-white/40"
-                  }`}
-                />
+                  className="flex items-center justify-center p-2.5"
+                >
+                  <span
+                    className={`block h-1.5 rounded-full transition-all ${
+                      i === current ? "w-4 bg-white" : "w-1.5 bg-white/40"
+                    }`}
+                  />
+                </button>
               ))}
             </div>
           )}
