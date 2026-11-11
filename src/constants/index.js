@@ -212,9 +212,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2026 - Present",
     points: [
-      "Lead development of an autonomous AI cold-calling platform: Twilio Voice calls driven by the Claude API that qualify leads, handle objections and book appointments, with every outcome written back to a built-in CRM.",
-      "Built the product around it: FastAPI, SQLAlchemy and Alembic backend, PostgreSQL, JWT authentication with role-based access control and a Next.js dashboard, containerised with Docker Compose and Nginx.",
-      "Build AI agent automations and RAG and LLM systems for US business clients.",
+      "Lead development of an autonomous AI cold-calling platform: Twilio Voice calls driven by the Claude API qualify leads, handle objections and book appointments, and every outcome is written back to a built-in CRM.",
+      "Built the surrounding product: a FastAPI, SQLAlchemy and Alembic backend on PostgreSQL, JWT authentication with role-based access control, a Next.js dashboard, and Docker Compose and Nginx deployment.",
+      "Design and ship AI agent automations and RAG and LLM systems for US business clients.",
     ],
   },
   {
@@ -224,7 +224,7 @@ const experiences = [
     iconBg: "#1A202C",
     date: "Sep 2025 - Apr 2026",
     points: [
-      "Developed AI solutions using large language models, deep learning and generative architectures for real-world applications.",
+      "Built generative AI solutions with large language models, deep learning and generative architectures for real-world applications.",
     ],
   },
   {
@@ -234,9 +234,9 @@ const experiences = [
     iconBg: "#0C1E7F",
     date: "May 2023 - Present",
     points: [
-      "Delivered 120+ AI and software projects for international clients, with 50+ repeat clients across Fiverr and Upwork.",
-      "AI work: LLM agents (LangGraph), RAG pipelines, voice agents, computer vision (YOLOv8) and machine-learning models in Python.",
-      "Full-stack work: React, Next.js, FastAPI, Django and PostgreSQL applications, plus WordPress, SEO and performance work for small-business clients.",
+      "Delivered 120+ AI and software projects for international clients; more than 50 clients returned for repeat work across Fiverr and Upwork.",
+      "AI: built LLM agents (LangGraph), RAG pipelines, voice agents, computer-vision systems (YOLOv8) and machine-learning models in Python.",
+      "Full-stack: shipped React, Next.js, FastAPI, Django and PostgreSQL applications, plus WordPress, SEO and performance work for small businesses.",
     ],
   },
   {
@@ -246,10 +246,10 @@ const experiences = [
     iconBg: "#1A202C",
     date: "June 2024 - Sept 2024",
     points: [
-      "Developed custom data scraping scripts using Python, BeautifulSoup, and Selenium to extract structured data from complex websites.",
-      "Automated large-scale data collection pipelines with scheduling, retries, and proxy handling for uninterrupted scraping.",
-      "Worked with RESTful and GraphQL APIs to fetch, parse, and normalize large datasets from multiple sources.",
-      "Cleaned and transformed raw scraped data using Pandas and Regex for integration into dashboards and analytics tools.",
+      "Built custom data-scraping scripts in Python with BeautifulSoup and Selenium to extract structured data from complex websites.",
+      "Automated large-scale data-collection pipelines with scheduling, retries and proxy handling for uninterrupted scraping.",
+      "Consumed RESTful and GraphQL APIs to fetch, parse and normalize large datasets from multiple sources.",
+      "Cleaned and transformed raw scraped data with Pandas and regular expressions for dashboards and analytics tools.",
     ],
   },
 ];
@@ -258,7 +258,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Taha Saqib is an exceptional professional who delivers high-quality work with remarkable attention to detail. Collaborating with Taha was a pleasure, as his DEEP UNDERSTANDING of the project needs ensured seamless communication and execution. Highly recommend working with him! 👍",
+      "Taha Saqib is an exceptional professional who delivers high-quality work with remarkable attention to detail. Collaborating with Taha was a pleasure, as his deep understanding of the project needs ensured seamless communication and execution. Highly recommend working with him!",
     name: "Akader",
     designation: "CEO",
     company: "TravelDoh",
@@ -266,7 +266,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "Taha Saqib's work in Data Science and ML truly impressed us, with meticulous attention to detail and an exceptionally PROFESSIONAL touch that exceeded our expectations. Working with Taha was a pleasure, thanks to his deep understanding and politeness, plus he delivered everything on time! 🙌",
+      "Taha Saqib's work in Data Science and ML truly impressed us, with meticulous attention to detail and an exceptionally professional touch that exceeded our expectations. Working with Taha was a pleasure, thanks to his deep understanding and politeness, plus he delivered everything on time!",
     name: "Victoria",
     designation: "CTO",
     company: "AI Sol",
@@ -274,7 +274,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "Taha Saqib provided outstanding professionalism in his website development work. He was also incredibly quick to respond throughout the project, making collaboration smooth. Highly recommended! 👍",
+      "Taha Saqib provided outstanding professionalism in his website development work. He was also incredibly quick to respond throughout the project, making collaboration smooth. Highly recommended!",
     name: "Kampops",
     designation: "BOD",
     company: "Roofing Business",
@@ -369,7 +369,7 @@ const projects = [
   {
     name: "German SME Transaction Classification",
     description:
-      "Leakage-safe reproduction of a published SME transaction-categorisation pipeline for German text and 37 classes. GermanFinBERT reached 0.649 ± 0.027 accuracy against 0.612 ± 0.025 for FinBERT over five seeds, with calibrated routing to manual review. Reliability diagrams compare model confidence before and after calibration.",
+      "Leakage-safe reproduction of a published SME transaction-categorization pipeline for German text and 37 classes. GermanFinBERT reached 0.649 ± 0.027 accuracy against 0.612 ± 0.025 for FinBERT over five seeds, with calibrated routing to manual review. Reliability diagrams compare model confidence before and after calibration.",
     tags: [
       { name: "Hugging Face", color: "green-text-gradient" },
       { name: "FinBERT", color: "blue-text-gradient" },
@@ -383,7 +383,7 @@ const projects = [
   {
     name: "SVD Collaborative Filtering",
     description:
-      "Recommender system on MovieLens 100K and 1M. Truncated SVD at k=10 reaches an RMSE of 0.8812 against 1.0447 for a global-mean baseline; SGD matrix factorisation reaches 0.8710. Plots cover singular-value decay, explained variance, RMSE and MAE against rank, baseline comparison and a cross-dataset check.",
+      "Recommender system on MovieLens 100K and 1M. Truncated SVD at k=10 reaches an RMSE of 0.8812 against 1.0447 for a global-mean baseline; SGD matrix factorization reaches 0.8710. Plots cover singular-value decay, explained variance, RMSE and MAE against rank, baseline comparison and a cross-dataset check.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
       { name: "NumPy", color: "blue-text-gradient" },
@@ -397,7 +397,7 @@ const projects = [
   {
     name: "Respiratory Waveform Forecasting",
     description:
-      "BiLSTM with Bahdanau attention that forecasts 15 seconds of the nasal-pressure waveform from 20 seconds of physiological signal in EDF files. The pipeline filters, normalises and resamples to 32 Hz, extracts breathing frequency, runs sliding-window inference on GPU or CPU and exports predictions to CSV and EDF.",
+      "BiLSTM with Bahdanau attention that forecasts 15 seconds of the nasal-pressure waveform from 20 seconds of physiological signal in EDF files. The pipeline filters, normalizes and resamples to 32 Hz, extracts breathing frequency, runs sliding-window inference on GPU or CPU and exports predictions to CSV and EDF.",
     tags: [
       { name: "PyTorch", color: "pink-text-gradient" },
       { name: "BiLSTM", color: "blue-text-gradient" },
@@ -411,7 +411,7 @@ const projects = [
   {
     name: "SentimentFusion",
     description:
-      "Flask sentiment dashboard with four models (Logistic Regression, SVM, Naive Bayes and Random Forest) trained on 200,000+ Twitter and Reddit posts. The best model, an SVM, reaches 80.52% accuracy. Shows confidence scores, flags likely sarcasm with a context-aware detector and analyses batches of Bluesky posts.",
+      "Flask sentiment dashboard with four models (Logistic Regression, SVM, Naive Bayes and Random Forest) trained on 200,000+ Twitter and Reddit posts. The best model, an SVM, reaches 80.52% accuracy. Shows confidence scores, flags likely sarcasm with a context-aware detector and analyzes batches of Bluesky posts.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
       { name: "scikit-learn", color: "blue-text-gradient" },
@@ -439,7 +439,7 @@ const projects = [
   {
     name: "Transformer Time-Series Forecasting",
     description:
-      "Compares autoregressive and non-autoregressive Transformer forecasters with distributional modelling, evaluated with NRMSE and CRPS. The notebook covers preprocessing and windowing, training with hyperparameter tuning, and forecast plots against actual values.",
+      "Compares autoregressive and non-autoregressive Transformer forecasters with distributional modeling, evaluated with NRMSE and CRPS. The notebook covers preprocessing and windowing, training with hyperparameter tuning, and forecast plots against actual values.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
       { name: "Transformers", color: "blue-text-gradient" },

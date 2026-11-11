@@ -174,7 +174,7 @@ const Works = () => {
 
       <div className="w-full flex">
         <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described, and hovering a card reveals a link to its source code repository on GitHub.
+          Selected real-world projects, each with a short description and a link to its source code on GitHub. The images on each card cycle through screenshots, charts and architecture diagrams.
         </p>
       </div>
 

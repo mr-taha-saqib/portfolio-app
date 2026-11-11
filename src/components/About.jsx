@@ -72,11 +72,12 @@ const About = () => {
       </div>
 
       <p ref={paragraphRef} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        Hi, I am Taha Saqib, a Generative AI Engineer at Algorixe LLC (Detroit, MI) building AI agent automations,
+        I'm Taha Saqib, a Generative AI Engineer at Algorixe LLC (Detroit, MI) building AI agent automations,
         RAG and LLM systems, and real-time voice agents. I work end to end, from data and model pipelines to FastAPI
-        backends, Next.js and React frontends, and deployment. I have delivered 120+ AI and software projects for
-        international clients, including 50+ repeat clients. I hold a BS in Computer Science from FAST-NUCES (2021 - 2025).
-        Let's collaborate and bring your vision to life!
+        backends, Next.js and React frontends, and production deployment. Since 2023 I have delivered 120+ AI and
+        software projects for international clients, and more than 50 of them came back for repeat work. I hold a BS
+        in Computer Science from FAST-NUCES (2021 to 2025) and enjoy partnering with product teams worldwide to turn
+        ideas into reliable software.
       </p>
 
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-10">
