@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-app-two-lilac.vercel.app/sitemap.xml
+Sitemap: https://taha-saqib.vercel.app/sitemap.xml

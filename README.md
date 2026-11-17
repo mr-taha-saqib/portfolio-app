@@ -1,7 +1,7 @@
 # Taha Saqib: Portfolio
 
 Personal portfolio of Taha Saqib, Generative AI Engineer and full-stack developer.
-Live site: https://portfolio-app-two-lilac.vercel.app/
+Live site: https://taha-saqib.vercel.app/
 
 An interactive landing page with a 3D hero scene, animated sections, a work timeline,
 project cards linking to their source repositories, testimonials and a contact form.

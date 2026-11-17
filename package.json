@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Portfolio of Taha Saqib, Generative AI Engineer and full-stack developer: interactive 3D landing page built with React, Three.js and Tailwind CSS.",
   "author": "Taha Saqib",
-  "homepage": "https://portfolio-app-two-lilac.vercel.app/",
+  "homepage": "https://taha-saqib.vercel.app/",
   "repository": { "type": "git", "url": "git+https://github.com/mr-taha-saqib/portfolio-app.git" },
   "type": "module",
   "scripts": {
